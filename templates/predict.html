@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+      <html lang="en">
+      
+      <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>Fresh Grocer</title>
+
+      
+        <!-- Favicons -->
+        <link href="static/img/favicon.png" rel="icon">
+        <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="static/vendor/aos/aos.css" rel="stylesheet">
+        <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        <link href="static/css/style1.css" rel="stylesheet">
+      </head>
+      
+      <body>
+      
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top ">
+          <div class="container d-flex align-items-center">
+      
+            <h1 class="logo me-auto"><a href="index.html">Fresh Grocer</a></h1>
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="getstarted scrollto" href="/predict">Predict</a></li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+      
+          </div>
+        </header><!-- End Header -->
+        <section id="hero" class="d-flex align-items-center">
+     <div class="container">
+       <div class="container my-5">
+         <div class="row">
+           <div class="col-md-10 col-sm-6 mx-auto">
+             <form class="" action="/submit" method="post">
+
+	              <div class="form-group">
+                 <input type="text" name="item_weight" id="item_weight" class="form-control" required>
+                 <label for="item_weight" class="colwhi">Enter Item Weight</label>
+
+
+               <div class="form-group">
+                 <select class="form-control" name="item_fat_content" required="required">
+                   <option value="" selected>Item Fat Content</option>
+                   <option value="1">Low Fat</option>
+                   <option value="2">Regular</option>
+		               <option value="0">High Fat</option>
+                 </select>
+               </div>
+		          <div class="form-group">
+                 <input type="text" name="item_visibility" id="item_visibility" class="form-control" required>
+                 <label for="item_visibility" class="colwhi">Enter Item Visibility</label>
+               </div>
+
+
+               <div class="form-group">
+                 <select class="form-control chosenn" name="item_type" required="required">
+               </div>
+                   <option value="" selected>Item Type</option>
+                   <option value="0">Baking Goods</option>
+                   <option value="1">Breads</option>
+                   <option value="2">Breakfast</option>
+                   <option value="3">Canned</option>
+		   <option value="4">Dairy</option>
+                   <option value="5">Frozen Foods</option>
+                   <option value="6">Fruits and Vegetables</option>
+                   <option value="7">Hard Drinks</option>
+		   <option value="8">Health and Hygiene</option>
+                   <option value="9">Household</option>
+                   <option value="10">Meat</option>
+                   <option value="11">Others</option>
+		   <option value="12">Seafood</option>
+                   <option value="13">Snack Foods</option>
+                   <option value="14">Soft Drinks</option>
+                   <option value="15">Starchy Foods</option>
+                 </select>
+                 </select>
+               </div>
+
+
+
+               <div class="form-group">
+                 <input type="text" name="item_mrp" id="item_mrp" class="form-control" required>
+                 <label for="item_mrp" class="colwhi">Enter Item MRP</label>
+               </div>
+
+              <div class="form-group">
+                 <input type="text" name="outlet_establishment_year" id="outlet_establishment_year" class="form-control" required>
+                 <label for="outlet_establishment_year" class="colwhi">Outlet Establishment Year (YYYY)</label>
+               </div>
+
+
+
+               <div class="form-group">
+                 <select class="form-control chosenn" name="outlet_size" required="required">
+                   <option value="" selected>Outlet Size</option>
+                   <option value="0">High</option>
+                   <option value="1">Medium</option>
+                   <option value="2">Small</option>
+                 </select>
+               </div>
+
+              <div class="form-group">
+                 <select class="form-control chosenn" name="outlet_location_type" required="required">
+                   <option value="" selected>Outlet Location Type</option>
+                   <option value="0">Tier 1</option>
+                   <option value="1">Tier 2</option>
+                   <option value="2">Tier 3</option>
+                 </select>
+               </div>
+
+               <div class="form-group">
+                 <select class="form-control chosenn" name="outlet_type" required="required">
+                   <option value="" selected>Outlet Type</option>
+                   <option value="0">Grocery Store</option>
+                   <option value="1">Supermarket Type1</option>
+                   <option value="2">Supermarket Type2</option>
+		   <option value="3">Supermarket Type3</option>
+                 </select>
+               </div>
+
+
+             <div class="form-group">
+               <input type="submit" class="btn-get-started" value="Submit">
+               <input type="reset" class="btn-get-started" value="Reset">
+             </div>
+           </form><br><br>
+           </div>
+         </div>
+       </div>
+     </div>
+     </section>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Gobi J</h3>
+            <p>
+              Fresh Grocer<br>
+              Salem,<br>
+              Tamil Nadu<br><br>
+              <strong>Phone:</strong> 6383576055<br>
+              <strong>Email:</strong> gobij2003@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Social Networks</h4>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mr. Gobi J</span></strong>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
